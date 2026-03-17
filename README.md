@@ -1,32 +1,39 @@
 # HOSxP Analytics Pipeline
-**High-performance SQL architecture and ETL pipelines for legacy healthcare database systems.**
 
-## Overview
-This enterprise-grade data pipeline reverse-engineers undocumented HOSxP clinical data schemas to enable real-time, cross-department analytics. By refactoring legacy systems and optimizing MySQL database queries for over 400,000 patient records, the architecture achieves a significant reduction in data retrieval latency (from 24 hours to approximately 1 hour). This ensures rapid medical decision support within a strictly PDPA-compliant infrastructure.
+SQL-based analytics pipeline for legacy HOSxP hospital databases.
+
+Processes operational data covering 400K+ patient records and reduces reporting latency from ~24 hours to <1 hour.
+
+## Problem
+
+HOSxP operational data is difficult to analyze due to undocumented schemas and complex multi-table relationships.
+
+Generating cross-department reports previously required up to 24 hours.
 
 ## Architecture
 
-| Layer | Description |
-| :--- | :--- |
-| **Pattern** | Dual-Channel ETL Data Pipeline |
-| **Data Flow** | [Legacy HOSxP MySQL] -> [Python Orchestrator] -> [Optimized SQL Analytics] -> [BI Dashboard] |
-| **Core Focus** | Legacy Refactoring, High-Concurrency Optimization, Role-Based Access Control (RBAC) |
+```
+HOSxP MySQL
+  ↓
+SQL ETL Queries
+  ↓
+Optimized Analytics Queries
+  ↓
+Operational Dashboard
+```
 
 ## Tech Stack
 
-| Component | Technology |
-| :--- | :--- |
-| **Data Processing** | Python (Pandas) |
-| **Database** | MySQL (HOSxP) |
-| **Infrastructure** | PDPA-Compliant Secure Environment |
+- MySQL
+- SQL
 
 ## Project Structure
 
-| Directory | Description |
-| :--- | :--- |
-| `Database/` | Schema definitions and structural data models. |
-| `Python/` | Core ETL scripts, automation, and data processing logic. |
-| `SQL/` | Optimized queries for analytics and high-speed data extraction. |
+```
+Database/   schema definitions
+SQL/        ETL and analytics queries
+```
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+MIT
