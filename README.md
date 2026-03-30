@@ -2,7 +2,7 @@
 
 A SQL-based data pipeline for extracting, transforming, and analyzing operational data from legacy HOSxP hospital systems.
 
-![License](https://img.shields.io/badge/license-MIT-blue)
+![HOSxP](https://img.shields.io/badge/Project-HOSxP-orange)
 
 ---
 
