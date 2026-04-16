@@ -1,8 +1,6 @@
-# HOSxP Analytics Pipeline
+# Hospital OPD Analytics Pipeline
 
 A SQL-based data pipeline for extracting, transforming, and analyzing operational data from legacy HOSxP hospital systems.
-
-![HOSxP](https://img.shields.io/badge/Project-HOSxP-orange)
 
 ---
 
@@ -75,9 +73,6 @@ WHERE o.vstdate BETWEEN '2025-03-01' AND '2025-09-30'
 GROUP BY o.vstdate
 ORDER BY o.vstdate DESC;
 ```
-
----
-
 ## Design Principles
 
 * **SQL-first**
